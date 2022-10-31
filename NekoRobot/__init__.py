@@ -1,29 +1,3 @@
-"""
-BSD 2-Clause License
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
-All rights reserved.
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-"""
-
-
 import logging
 import os
 import sys
@@ -254,18 +228,18 @@ pgram = Client(
 
 # Credits Logger
 print(
-    "[NEKOROBOT] NEKO Is Starting. | Programmer Network Project | BSD 2-Clause License."
+    "[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏] EVI Is Starting... | Programmer Network Project | BSD 2-Clause License."
 )
 print(
-    "[NEKOROBOT] Mewo Mewo! Successfully Connected With Programmer • Data Center • Chennai"
+    "[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏] AMMU! Successfully Connected With Programmer • Data Center • Califronia"
 )
 print(
-    "[NEKOROBOT] Project Maintained By: github.com/Awesome-Prince (https://github.com/Awesome-Prince/NekoRobot-3)"
+    "[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏] Project Maintained By: https://github.com/GOD-OF-LOVE (https://github.com/GOD-OF-LOVE/NekoRobot)"
 )
 
-print("[NEKOROBOT]: Telegraph Installing")
+print("[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏]: Telegraph Installing")
 telegraph = Telegraph()
-print("[NEKOROBOT]: Telegraph Account Creating")
+print("[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏]: Telegraph Account Creating")
 telegraph.create_account(short_name="Neko")
 updater = tg.Updater(
     token=TOKEN,
@@ -273,12 +247,12 @@ updater = tg.Updater(
     request_kwargs={"read_timeout": 10, "connect_timeout": 10},
     use_context=True,
 )
-print("[NEKOROBOT]: TELETHON CLIENT STARTING")
+print("[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏]: TELETHON CLIENT STARTING")
 tbot = TelegramClient(MemorySession(), API_ID, API_HASH)
 NEKO_PTB = updater.dispatcher
 # asyncio.get_event_loop().run_until_complete(NEKO_PTB.bot.initialize())
 # ------------------------------------------------------------------
-print("[NEKOROBOT]: PYROGRAM CLIENT STARTING")
+print("[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏]: PYROGRAM CLIENT STARTING")
 PyroGram = TOKEN.split(":")[0]
 pgram = Client(
     name=PyroGram,
@@ -296,11 +270,11 @@ aiohttpsession = ClientSession()
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 print(
-    "[NEKOROBOT]: Connecting To Programmer • Data Center • Chennai • PostgreSQL Database"
+    "[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏]: Connecting To Programmer • Data Center • califronia • PostgreSQL Database"
 )
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 print(
-    "[NEKOROBOT]: Connecting To Programmer • Neko Userbot (https://telegram.dog/Awesome_Neko)"
+    "[💖ꜛ⟬꯭࿊꯭ɴ꯭፝𝐄 ꯭꯭༓ ꯭𝐋꯭ᴏ፝֟ꪜ꯭𝐄 ꯭༓꯭ 𝐌꯭ᴜ꯭፝sɪ꯭𝐂꯭⟭ꜛ💖]: Connecting To Programmer • Neko Userbot (https://t.me/One_love_music_entrybot)"
 )
 timeout = httpx.Timeout(40)
 http = httpx.AsyncClient(http2=True, timeout=timeout)
@@ -353,4 +327,4 @@ tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
 
-LOGGER.info("[NEKOROBOT IS READY]")
+LOGGER.info("[𝙇𝙐𝘾𝘼𝙎★𝙀𝙑𝙄★𝙍𝙊𝘽𝙊𝙏]")
