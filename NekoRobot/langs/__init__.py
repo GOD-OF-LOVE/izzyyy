@@ -1,5 +1,3 @@
-
-
 from NekoRobot.langs.language import langs
 
 get_string = langs.get_string
